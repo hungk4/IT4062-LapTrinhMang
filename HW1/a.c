@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    FILE *f1 = fopen("log.txt", "a");
+    FILE *f1 = fopen("log_20225630.txt", "a");
     if (f1 == NULL)
     {
         printf("Failed to connect LOG file !!!!\n");
@@ -75,6 +75,7 @@ int main(int argc, char *argv[])
         {
             exitApp();
             appendLog(f1);
+            break;
         }
         else
         {
